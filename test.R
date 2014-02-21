@@ -1,6 +1,7 @@
 x <- c(2,3,5,7,11)
-sqrt(x)
-mean(x)
+
 summary(x)
+
+mean(x)
 sd(x)
-media(x)
+median(x)

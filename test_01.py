@@ -1,10 +1,13 @@
 import pandas as pd
 
-test= pd.Series([300,200,100,50,10])
-print(test[1])
-print(type(test))
-print(len(test))
-print(test[2])
-print(test[3])
 
-print(test[1]+test[2])
+#import csv
+df = pd.read_csv('iris.csv')
+print(df.dtypes)
+print(df.head())
+
+print(df.ix[:,3:].groupby('Species').mean())
+print(df.ix[:,3:].groupby('Species').std())
+
+
+

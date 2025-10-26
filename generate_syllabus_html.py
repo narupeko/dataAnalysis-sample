@@ -1,14 +1,14 @@
 """Generate an HTML syllabus that includes a diploma policy matrix.
 
 The script reads diploma policy alignment scores for a given course code
-from a SQLite database and renders them inside a 5x2 HTML table.  The
-resulting HTML document is written to disk and can be embedded or served
-in a web page.
+from a CSV file and renders them inside a 5x2 HTML table. The resulting
+HTML document is written to disk and can be embedded or served in a web
+page.
 """
 from __future__ import annotations
 
 import argparse
-import sqlite3
+import csv
 from pathlib import Path
 from typing import Dict, List, Tuple
 
@@ -21,50 +21,28 @@ POLICY_ITEMS: List[Tuple[str, str]] = [
     ("DP5", "自己管理・主体性"),
 ]
 
-DB_FILENAME = "syllabus.db"
-TABLE_NAME = "diploma_policy_scores"
-
-
-def ensure_database(path: Path) -> None:
-    """Create the database schema and a small sample dataset if necessary."""
-    with sqlite3.connect(path) as conn:
-        cursor = conn.cursor()
-        cursor.execute(
-            f"""
-            CREATE TABLE IF NOT EXISTS {TABLE_NAME} (
-                course_code TEXT NOT NULL,
-                policy_code TEXT NOT NULL,
-                score INTEGER NOT NULL,
-                PRIMARY KEY (course_code, policy_code)
-            )
-            """
-        )
-
-        # Provide a minimal sample so the script can be executed immediately
-        # after cloning the repository.
-        sample_entries = [
-            ("CS101", "DP1", 3),
-            ("CS101", "DP2", 4),
-            ("CS101", "DP3", 5),
-            ("CS101", "DP4", 4),
-            ("CS101", "DP5", 3),
-        ]
-        cursor.executemany(
-            f"INSERT OR IGNORE INTO {TABLE_NAME} (course_code, policy_code, score) VALUES (?, ?, ?)",
-            sample_entries,
-        )
-        conn.commit()
+CSV_FILENAME = "diploma_policy_scores.csv"
 
 
 def fetch_policy_scores(path: Path, course_code: str) -> Dict[str, int]:
     """Return a mapping of policy code to score for the specified course."""
-    with sqlite3.connect(path) as conn:
-        cursor = conn.cursor()
-        cursor.execute(
-            f"SELECT policy_code, score FROM {TABLE_NAME} WHERE course_code = ?",
-            (course_code,),
-        )
-        return {policy: score for policy, score in cursor.fetchall()}
+
+    with path.open(encoding="utf-8") as csv_file:
+        reader = csv.DictReader(csv_file)
+        scores: Dict[str, int] = {}
+        for row in reader:
+            if row.get("course_code") != course_code:
+                continue
+            policy_code = row.get("policy_code")
+            score = row.get("score")
+            if not policy_code or score is None:
+                continue
+            try:
+                scores[policy_code] = int(score)
+            except ValueError:
+                # Ignore malformed score entries instead of raising.
+                continue
+    return scores
 
 
 def build_policy_table_rows(score_map: Dict[str, int]) -> str:
@@ -146,20 +124,24 @@ def parse_args() -> argparse.Namespace:
         help="Path of the HTML file to create",
     )
     parser.add_argument(
-        "--database",
+        "--csv",
         type=Path,
-        default=Path(DB_FILENAME),
-        help="Path to the SQLite database file",
+        default=Path(CSV_FILENAME),
+        help="Path to the CSV file that stores diploma policy scores",
     )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    db_path: Path = args.database
+    csv_path: Path = args.csv
 
-    ensure_database(db_path)
-    scores = fetch_policy_scores(db_path, args.course_code)
+    if not csv_path.exists():
+        raise FileNotFoundError(
+            f"CSV file '{csv_path}' not found. Please provide a file with diploma policy data."
+        )
+
+    scores = fetch_policy_scores(csv_path, args.course_code)
 
     html = render_html(args.course_code, args.course_title, scores)
     args.output.write_text(html, encoding="utf-8")

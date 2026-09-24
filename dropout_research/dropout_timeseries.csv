@@ -1,0 +1,63 @@
+country,indicator,cohort_or_year,value,unit,status,source
+OECD,bachelor completion within theoretical duration (EAG B5),EAG2019,39,%,V,https://www.oecd.org/en/publications/2019/09/education-at-a-glance-2019_892e172e.html
+OECD,bachelor completion within theoretical duration (EAG B5),EAG2022,39,%,V,https://www.oecd.org/en/publications/2022/10/education-at-a-glance-2022_4aad242c.html
+OECD,bachelor completion within theoretical duration (EAG B5),EAG2025,43,%,V,https://www.oecd.org/en/publications/education-at-a-glance-2025_1c0d9c79-en/full-report/who-is-expected-to-complete-tertiary-education_a1099e2e.html
+OECD,bachelor completion within theoretical duration +3y (EAG B5),EAG2019,67,%,V,https://www.oecd.org/en/publications/2019/09/education-at-a-glance-2019_892e172e.html
+OECD,bachelor completion within theoretical duration +3y (EAG B5),EAG2022,68,%,V,https://www.oecd.org/en/publications/2022/10/education-at-a-glance-2022_4aad242c.html
+OECD,bachelor completion within theoretical duration +3y (EAG B5),EAG2025,70,%,V,https://www.oecd.org/en/publications/education-at-a-glance-2025_1c0d9c79-en/full-report/who-is-expected-to-complete-tertiary-education_a1099e2e.html
+OECD,left tertiary by end of theoretical duration (EAG B5),EAG2025,20,%,V,https://www.oecd.org/en/publications/education-at-a-glance-2025_1c0d9c79-en/full-report/who-is-expected-to-complete-tertiary-education_a1099e2e.html
+OECD,tertiary dropout (old cross-section survival definition),2005,31,%,V,https://www.oecd.org/content/dam/oecd/en/publications/reports/2009/02/highlights-from-education-at-a-glance-2008_g1gh9dc6/9789264040625-en.pdf
+UK,bachelor completion within theoretical duration (EAG B5),EAG2025,67,%,V,https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/09/education-at-a-glance-2025-country-notes_9749f4ff/united-kingdom_138c780e/c93708b1-en.pdf
+Netherlands,bachelor completion within theoretical duration +3y (EAG B5),EAG2023,71,%,V,https://gpseducation.oecd.org/Content/EAGCountryNotes/EAG2023_CN_NLD_pdf.pdf
+USA,IPEDS 6-year graduation rate (first-time full-time bachelor),2004,58,%,V,https://nces.ed.gov/fastfacts/display.asp?id=40
+USA,IPEDS 6-year graduation rate (first-time full-time bachelor),2007,59,%,V,https://nces.ed.gov/programs/coe/indicator/ctr
+USA,IPEDS 6-year graduation rate (first-time full-time bachelor),2009,59,%,V,https://nces.ed.gov/programs/coe/pdf/Indicator_CTR/coe_ctr_2017_05.pdf
+USA,IPEDS 6-year graduation rate (first-time full-time bachelor),2010,60,%,V,https://nces.ed.gov/programs/raceindicators/indicator_red.asp
+USA,IPEDS 6-year graduation rate (first-time full-time bachelor),2011,60,%,V,https://nces.ed.gov/programs/coe/pdf/Indicator_CTR/coe_ctr_2019_05.pdf
+USA,IPEDS 6-year graduation rate (first-time full-time bachelor),2012,62,%,V,https://nces.ed.gov/programs/coe/pdf/coe_ctr.pdf
+USA,IPEDS 6-year graduation rate (first-time full-time bachelor),2014,64,%,V,https://nces.ed.gov/programs/coe/pdf/2022/ctr_508.pdf
+USA,NSC persistence rate (2nd fall any institution),2009,69.9,%,V,https://www.insidehighered.com/news/2014/07/10/clearinghouse-study-finds-declining-student-persistence-rates
+USA,NSC persistence rate (2nd fall any institution),2012,68.7,%,V,https://www.insidehighered.com/news/2014/07/10/clearinghouse-study-finds-declining-student-persistence-rates
+USA,NSC persistence rate (2nd fall any institution),2017,73.8,%,V,https://nscresearchcenter.org/snapshotreport35-first-year-persistence-and-retention/
+USA,NSC persistence rate (2nd fall any institution),2018,75.9,%,V (method break),https://nscresearchcenter.org/wp-content/uploads/PersistenceRetention2021.pdf
+USA,NSC persistence rate (2nd fall any institution),2019,73.9,%,V,https://nscresearchcenter.org/wp-content/uploads/PersistenceRetention2021.pdf
+USA,NSC persistence rate (2nd fall any institution),2020,75.0,%,V,https://www.insidehighered.com/news/2022/06/29/persistence-rose-students-starting-college-fall-2020
+USA,NSC persistence rate (2nd fall any institution),2021,75.7,%,V,https://www.studentclearinghouse.org/news/nearly-76-of-fall-2021-freshman-class-returned-to-college-by-fall-2022/
+USA,NSC persistence rate (2nd fall any institution),2022,76.5,%,V,https://www.insidehighered.com/news/students/retention/2024/06/27/persistence-and-retention-rates-exceed-pre-pandemic-levels
+USA,NSC persistence rate (2nd fall any institution),2023,76.8,%,V (restated from 77.6),https://www.forbes.com/sites/michaeltnietzel/2026/06/25/college-persistence-rate-ticks-up-with-some-groups-showing-strong-gains/
+USA,NSC persistence rate (2nd fall any institution),2024,77.1,%,V,https://www.studentclearinghouse.org/nscblog/new-persistence-and-retention-report-reveals-decade-high-rates/
+USA,NSC retention rate (2nd fall same institution),2017,61.7,%,V,https://nscresearchcenter.org/snapshotreport35-first-year-persistence-and-retention/
+USA,NSC retention rate (2nd fall same institution),2020,66.4,%,V,https://www.insidehighered.com/news/2022/06/29/persistence-rose-students-starting-college-fall-2020
+USA,NSC retention rate (2nd fall same institution),2022,68.2,%,V,https://www.insidehighered.com/news/students/retention/2024/06/27/persistence-and-retention-rates-exceed-pre-pandemic-levels
+USA,NSC retention rate (2nd fall same institution),2023,69.5,%,V,https://www.highereddive.com/news/persistence-retention-rates-national-student-clearinghouse-research-center/751653/
+USA,NSC retention rate (2nd fall same institution),2024,69.1,%,V,https://www.studentclearinghouse.org/nscblog/new-persistence-and-retention-report-reveals-decade-high-rates/
+USA,NSC 6-year completion rate (any credential any institution),2018,61.1,%,V,https://www.highereddive.com/news/national-college-completion-rises-clearinghouse/734508/
+USA,NSC 6-year completion rate (any credential any institution),2019,61.1,%,V,https://www.studentclearinghouse.org/news/college-completion-rates-hold-steady-at-recent-highs/
+USA,Some College No Credential (million persons),2018,36.0,million,V (under 65),https://files.eric.ed.gov/fulltext/ED599535.pdf
+USA,Some College No Credential (million persons),2021,40.4,million,V (all ages),https://nscresearchcenter.org/wp-content/uploads/SCNCReport2023.pdf
+USA,Some College No Credential (million persons),2022,36.8,million,V (working-age redefined),https://nscresearchcenter.org/wp-content/uploads/SCNCReport2024.pdf
+USA,Some College No Credential (million persons),2023,37.6,million,V (working-age),https://nscresearchcenter.org/wp-content/uploads/SCNCReport2025.pdf
+UK,HESA young full-time first degree non-continuation after year 1,2013,6.0,%,V,https://www.timeshighereducation.com/news/uk-university-dropout-rate-rises-third-year-row
+UK,HESA young full-time first degree non-continuation after year 1,2014,6.2,%,V,https://www.timeshighereducation.com/news/uk-university-dropout-rate-rises-third-year-row
+UK,HESA young full-time first degree non-continuation after year 1,2015,6.4,%,V,https://www.timeshighereducation.com/news/uk-university-dropout-rate-rises-third-year-row
+UK,HESA full-time first degree non-continuation after year 1,2019,5.3,%,V?,https://www.hesa.ac.uk/data-and-analysis/performance-indicators/non-continuation/table-t3
+Germany,DZHW bachelor dropout rate (Studienabbruchquote),2020,28,%,UNVERIFIED,https://www.dzhw.eu
+France,licence success in 3 years,2020,30,%,UNVERIFIED,https://www.enseignementsup-recherche.gouv.fr
+Australia,adjusted attrition domestic bachelor commencing,2019,15,%,UNVERIFIED,https://www.education.gov.au
+Korea,annual in-course dropout rate,2023,5,%,UNVERIFIED,https://www.academyinfo.go.kr
+Colombia,SPADIES university cohort dropout by 10th semester,2019,45,%,UNVERIFIED,https://www.mineducacion.gov.co
+Japan,MEXT annual dropout rate (univ+junior college+KOSEN),2007,2.41,%,要確認,https://www.mext.go.jp/b_menu/houdou/26/10/__icsFiles/afieldfile/2014/10/08/1352425_01.pdf
+Japan,MEXT annual dropout rate (univ+junior college+KOSEN),2012,2.65,%,V,https://www.mext.go.jp/b_menu/houdou/26/10/__icsFiles/afieldfile/2014/10/08/1352425_01.pdf
+Japan,MEXT annual dropout rate (univ+junior college+KOSEN),2019,2.50,%,要確認,https://www.kyoiku-press.com/post-245002/
+Japan,MEXT annual dropout rate (univ+junior college+KOSEN),2021,1.95,%,V,https://www.mext.go.jp/content/20220603-mxt_kouhou01-000004520_01.pdf
+Japan,MEXT annual dropout rate (incl. graduate schools),2022,2.09,%,V,https://www.nikkei.com/article/DGXZQOUE23AMW0T20C23A6000000/
+Japan,MEXT annual dropout rate (incl. graduate schools),2023,2.17,%,V (逆算),https://www.mext.go.jp/content/20240627-mxt_gakushi01-000013028_1.pdf
+Japan,MEXT annual dropout rate (incl. graduate schools),2024,2.10,%,V,https://www.kyobun.co.jp/article/2025082205
+Japan,MEXT annual dropout rate (university only),2024,2.00,%,V,https://www.kyobun.co.jp/article/2025082205
+Japan,Yomiuri 4-year dropout rate (2014 entrants),2014,7,%,要確認,https://hataractive.jp/useful/131/
+Japan,MEXT dropout reason share: economic,2012,20.4,%,V,https://www.mext.go.jp/b_menu/houdou/26/10/__icsFiles/afieldfile/2014/10/08/1352425_01.pdf
+Japan,MEXT dropout reason share: economic,2022,13.1,%,V,https://www.mext.go.jp/content/20230622-mxt_gakushi01-1269672_01.pdf.pdf
+Japan,MEXT dropout reason share: economic,2024,13.2,%,V,https://www.mext.go.jp/content/20250822-mxt_gakushi01-000013028_2.pdf
+Japan,MEXT dropout reason share: transfer/career change,2012,15.4,%,V,https://www.mext.go.jp/b_menu/houdou/26/10/__icsFiles/afieldfile/2014/10/08/1352425_01.pdf
+Japan,MEXT dropout reason share: transfer/career change,2022,17.8,%,V,https://www.mext.go.jp/content/20230622-mxt_gakushi01-1269672_01.pdf.pdf
+Japan,MEXT dropout reason share: transfer/career change,2024,22.3,%,V,https://www.mext.go.jp/content/20250822-mxt_gakushi01-000013028_2.pdf
